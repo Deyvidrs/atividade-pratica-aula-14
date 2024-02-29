@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Reserva de Viagem Avançado</title>
+  </head>
+  <body>
+    <h1>Formulário de Reserva de Viagem Avançado</h1>
+    <p>Deixe todas sua informações aqui!</p>
+
+    <section>
+        <fieldset>
+            <legend>Dados do Comprador</legend>
+        <form action="" method="get">
+        <label for="nome">Nome</label><br />
+        <input type="text" name="nome" /><br /><br />
+
+        <label for="email">Email</label><br />
+        <input type="email" required name="email" /><br /><br />
+
+        <label for="date"> Data de Ida </label><br />
+        <input type="date" name="dataIda" />
+        <br /><br />
+
+        <label for="date">Data de Volta</label><br />
+        <input type="date" name="dataVolta" />
+        <br /><br />
+
+        <label for="quantidade"> Quantidade de Pessoas</label><br />
+        <input type="number" required name="qtpessoas" />
+        <br /><br />
+        </fieldset>
+        <fieldset>
+
+         <legend>Quais serviços deseja contratar </legend>
+            <label>
+                <input type="checkbox" name="passagens" value="Passagens"/>Compra de passagens <br>
+            </label>
+            <label>
+                <input type="checkbox" name="hospedagem" value="hospedagem" > Reserva de Hospedagem <br>
+            </label>
+       
+        <label>
+            <input type="checkbox" name="veiculos" value="veiculos">Reserva de Carros
+        
+        
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Escolha  a forma de Pagamento</legend>
+      <label>
+        <input type="radio" name="formaPagamento" value="cartão de credito">Cartão de crédito
+      </label><br>
+      <label>
+        <input type="radio" name="formaPagamento" value="boleto">Boleto
+      </label><br>
+      <label>
+        <input type="radio" name="formaPagamento" value="pix">Pix
+      </label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Escolha o praso para Pagamento</legend>
+    <select name="prasoPagamento" id="prasoPagamento">
+        <option value="avista">Avista</option>
+        <option value="6vezes">6x sem Juros</option>
+        <option value="12vezes" selected>12x com Juros</option>
+      </select>
+
+    </fieldset>
+        <br /><br />
+        <label for="coment"> Deixe Algum se Comentário se Necessário</label><br /><br />
+        <textarea
+          name="comentario"
+          id="comentario"
+          cols="30"
+          rows="10"
+        ></textarea
+        ><br /><br />
+      <label>
+        <input type="submit" value="Enviar"/>
+      </label>
+      </form>
+
+    </section>
+
+  </body>
+</html>

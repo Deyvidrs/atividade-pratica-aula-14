@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Bebidas</title>
+</head>
+<body>
+
+<script>
+  var escolha = prompt("Escolha uma bebida: café, leite ou chá");
+  var valor;
+
+  switch (escolha) {
+    case "café":
+      valor = 2.50;
+      break;
+    case "leite":
+      valor = 3.00;
+      break;
+    case "chá":
+      valor = 2.00;
+      break;
+    default:
+      alert("Opção inválida. Escolha entre café, leite ou chá.");
+      break;
+  }
+
+  if (valor !== undefined) {
+    alert("Você escolheu " + escolha + ". O valor a ser pago é R$ " + valor.toFixed(2) + ".");
+  }
+</script>
+
+</body>
+</html>
